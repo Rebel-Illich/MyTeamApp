@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MyTeams</string>
+    <string name="new_york_city">New York city</string>
+    <string name="name_of_guy">Keyon R.</string>
+    <string name="_13">13</string>
+    <string name="no_activity">no activity</string>
+    <string name="counter_name">1889</string>
+    <string name="coma">,</string>
+    <string name="steps">steps</string>
+    <string name="today">Today</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="stepsOrKm">Choose in which activity you would like to complete</string>
+    <string name="timeOrDays">Choose time frame for your leaderboard</string>
+    <string name="save">Save</string>
+    <string name="km">KM</string>
+    <string name="key_steps">steps</string>
+    <string name="order_location">location</string>
+    <string name="seven_days">Seven Days</string>
+    <string name="today_calendar">TODAY</string>
+    <string name="may">MAY</string>
+    <string name="key_today">today</string>
+    <string name="order_today">TODAY</string>
+    <string name="label_submit">save</string>
+    <string name="today_24">TODAY</string>
+</resources>

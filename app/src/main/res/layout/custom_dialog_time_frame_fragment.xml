@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:text="@string/timeOrDays"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/filter_group"
+        >
+
+        <com.hunter.myteams.customview.CustomSelectFilterView
+            android:id="@+id/today_time_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+
+        </com.hunter.myteams.customview.CustomSelectFilterView>
+
+        <com.hunter.myteams.customview.CustomSelectFilterView
+            android:id="@+id/seven_days_time_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+        </com.hunter.myteams.customview.CustomSelectFilterView>
+
+        <com.hunter.myteams.customview.CustomSelectFilterView
+            android:id="@+id/month_time_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+        </com.hunter.myteams.customview.CustomSelectFilterView>
+
+<!--        <com.hunter.myteams.fragmentMyTeam.indicatorButtons.IndicatorRadioGroup-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <com.hunter.myteams.fragmentMyTeam.indicatorButtons.RadioIndicatorButton-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="72dp"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:text="@string/today_24"-->
+<!--                app:icon="@drawable/ic_baseline_calendar_today_24" />-->
+
+<!--            <com.hunter.myteams.fragmentMyTeam.indicatorButtons.RadioIndicatorButton-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="72dp"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:text="7 DAYS"-->
+<!--                app:icon="@drawable/ic_baseline_filter_7_24" />-->
+
+<!--                    <com.hunter.myteams.fragmentMyTeam.indicatorButtons.RadioIndicatorButton-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="72dp"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:text="MAY"-->
+<!--                        app:icon="@drawable/ic_baseline_calendar_view_month_24" />-->
+
+<!--        </com.hunter.myteams.fragmentMyTeam.indicatorButtons.IndicatorRadioGroup>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18sp"
+            android:text="@string/label_submit"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:background="@color/teal_700"
+            android:textStyle="bold"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_cancel_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="16sp"
+            android:padding="20dp"
+            android:textColor="#0094DE"
+            android:textColorHint="@color/black"
+            />
+
+    </LinearLayout>
+</LinearLayout>

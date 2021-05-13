@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:text="@string/stepsOrKm"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/filter_group"
+        >
+
+        <com.hunter.myteams.customview.CustomSelectFilterView
+            android:id="@+id/step_filter_indicator_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+        </com.hunter.myteams.customview.CustomSelectFilterView>
+
+
+        <com.hunter.myteams.customview.CustomSelectFilterView
+            android:id="@+id/map_filter_indicator_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+        </com.hunter.myteams.customview.CustomSelectFilterView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18sp"
+            android:text="@string/label_submit"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:background="@color/teal_700"
+            android:textStyle="bold"
+             />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="16sp"
+            android:padding="20dp"
+            android:textColor="#0094DE"
+            android:textColorHint="@color/black"
+            />
+
+    </LinearLayout>
+</LinearLayout>

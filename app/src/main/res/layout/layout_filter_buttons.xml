@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/filter_walk_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_selector">
+
+
+    <ImageView
+        android:id="@+id/imageArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down" />
+
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:srcCompat="@drawable/ic_directions_walk" />
+</FrameLayout>
+
+<FrameLayout
+android:id="@+id/filter_time_button"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:layout_weight="1"
+android:layout_marginEnd="60dp"
+android:background="@drawable/background_selector">
+
+<ImageView
+    android:id="@+id/imageView10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down" />
+
+<TextView
+    android:id="@+id/time_text"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:text="TextView" />
+
+</FrameLayout>
+</LinearLayout>
