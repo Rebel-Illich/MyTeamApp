@@ -24,6 +24,7 @@ class MyTeamApp: Application() {
 
         instance = this
         api = NetworkManager.getRestApi()
+        TeamDb.getInstance(this)
     }
 
 }

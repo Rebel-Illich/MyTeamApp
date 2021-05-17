@@ -29,6 +29,7 @@ class AllTeamViewModel(instance: MyTeamApp) : BaseViewModel(instance) {
 
 
     fun updateAllTeams() {
+
         allTeamRepository.getAllTeamApi()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())

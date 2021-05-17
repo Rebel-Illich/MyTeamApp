@@ -4,35 +4,33 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.room.TypeConverters
-import com.hunter.myteams.utils.Converters
 
 
 @Database(
-    entities = [],
+    entities = [CurrentActivitySortEntity::class, СurrentTimeSortEntity::class],
     version = 1,
     exportSchema = false
 )
-@TypeConverters(Converters::class)
-abstract class TeamDb: RoomDatabase() {
-    abstract val filterDao : TeamDao
+abstract class TeamDb : RoomDatabase() {
+
+    abstract fun filterDao(): TeamDao
 
     companion object {
         @Volatile
         private var instance: TeamDb? = null
 
         fun getInstance(
-            context: Context
+            context: Context?
         ): TeamDb = instance
             ?: synchronized(this) {
                 instance
                     ?: buildDatabase(
-                        context
+                        context!!
                     )
                         .also { instance = it }
             }
 
-        private fun buildDatabase(context: Context): TeamDb{
+        private fun buildDatabase(context: Context): TeamDb {
             return Room.databaseBuilder(
                 context,
                 TeamDb::class.java,

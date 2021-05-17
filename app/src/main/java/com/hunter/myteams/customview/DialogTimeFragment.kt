@@ -26,7 +26,7 @@ class DialogTimeFragment: DialogFragment(), View.OnClickListener {
     private var viewTimeState: ViewTimeState? = null
 
     enum class ViewTimeState{
-        TODAY, DAYS, MONTH
+        TODAY, DAYS, MONTH;
     }
 
     override fun onCreateView(
